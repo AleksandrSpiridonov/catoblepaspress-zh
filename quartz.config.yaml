@@ -1,20 +1,18 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Катоблепас
+  pageTitle: Catoblepas 出版社
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
-  analytics:
-    provider: yandex
-    counterId: 111323493
-  locale: ru-RU
-  baseUrl: catoblepaspress.ru
+  analytics: null
+  locale: zh-CN
+  baseUrl: aleksandrspiridonov.github.io/catoblepaspress-zh
   ignorePatterns:
     - private
     - templates
     - .obsidian
   theme:
-    fontOrigin: googleFonts
+    fontOrigin: local
     cdnCaching: true
     typography:
       header: Source Sans Pro
@@ -101,7 +99,7 @@ plugins:
   - source: "@quartz-community/quartz-fonts"
     enabled: true
     options:
-      fontOrigin: googleFonts
+      fontOrigin: local
       title: Source Sans Pro
       header: Source Sans Pro
       body: Source Sans Pro
@@ -119,9 +117,9 @@ plugins:
   - source: "@quartz-community/favicon"
     enabled: false
   - source: "@quartz-community/og-image"
-    enabled: true
+    enabled: false
   - source: "@quartz-community/cname"
-    enabled: true
+    enabled: false
   - source: "@quartz-community/content-page"
     enabled: true
   - source: "@quartz-community/folder-page"
@@ -203,7 +201,7 @@ plugins:
   - source: "@quartz-community/breadcrumbs"
     enabled: true
     options:
-      rootName: Главная
+      rootName: 首页
     layout:
       position: beforeBody
       priority: 5

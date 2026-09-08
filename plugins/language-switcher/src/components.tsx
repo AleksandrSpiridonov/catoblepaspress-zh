@@ -29,26 +29,28 @@ const styles = `.language-switcher {
 
 export const LanguageSwitcher: QuartzComponentConstructor<Options> = (opts) => {
   const Component: QuartzComponent = ({ cfg, fileData, displayClass }: QuartzComponentProps) => {
-    const configuredBase = cfg.baseUrl ?? opts.russianBaseUrl
-    const currentUrl = new URL(
-      configuredBase.includes("://") ? configuredBase : `https://${configuredBase}`,
-    )
-    const currentHostname = currentUrl.hostname
-    const englishHostname = new URL(opts.englishBaseUrl).hostname
-    const isEnglishSite = currentHostname === englishHostname
-    const targetUrl = new URL(isEnglishSite ? opts.russianBaseUrl : opts.englishBaseUrl)
-    const slug = fileData.slug ?? "index"
-    const basePath = targetUrl.pathname.replace(/\/$/, "")
-    targetUrl.pathname = slug === "index" ? `${basePath}/` : `${basePath}/${slug}`
-
+    const slug = (fileData.slug ?? "index").replace(/\/index$/, "")
+    const languages = [
+      { label: "RU", name: "查看俄文版本", base: opts.russianBaseUrl },
+      { label: "EN", name: "查看英文版本", base: opts.englishBaseUrl },
+    ]
     return (
-      <a
-        aria-label={isEnglishSite ? "Перейти на русскую версию" : "Switch to English"}
-        class={`${displayClass ?? ""} language-switcher`.trim()}
-        href={targetUrl.toString()}
+      <nav
+        class={displayClass ?? ""}
+        aria-label="语言版本"
+        lang="zh-CN"
+        style={{ display: "flex", gap: "0.5rem" }}
       >
-        {isEnglishSite ? "RU" : "EN"}
-      </a>
+        {languages.map(({ label, name, base }) => {
+          const url = new URL(base)
+          url.pathname = url.pathname.replace(/\/$/, "") + (slug === "index" ? "/" : "/" + slug)
+          return (
+            <a class="language-switcher" href={url.toString()} aria-label={name}>
+              {label}
+            </a>
+          )
+        })}
+      </nav>
     )
   }
 

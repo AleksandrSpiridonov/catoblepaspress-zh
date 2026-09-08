@@ -1,5 +1,7 @@
 import { version } from "../../package.json"
 import { QuartzComponent, QuartzComponentConstructor } from "./types"
+import { joinSegments, pathToRoot } from "../util/path"
+import ageGate from "./scripts/ageGate.inline"
 
 interface Options {
   copyrightText: string
@@ -7,35 +9,42 @@ interface Options {
 }
 
 const CustomFooter: QuartzComponentConstructor<Options> = (opts) => {
-  const Footer: QuartzComponent = ({ displayClass }) => (
-    <footer class={displayClass ?? ""}>
+  const Footer: QuartzComponent = ({ displayClass, fileData }) => (
+    <footer class={displayClass ?? ""} lang="zh-CN">
       <div class="footer-top">
         <p class="copyright">{opts.copyrightText}</p>
         <ul class="footer-links">
           {Object.entries(opts.links).map(([text, link]) => (
             <li>
-              <a href={link}>{text}</a>
+              <a
+                href={
+                  link.startsWith("https://")
+                    ? link
+                    : joinSegments(pathToRoot(fileData.slug!), link)
+                }
+              >
+                {text}
+              </a>
             </li>
           ))}
         </ul>
       </div>
       <p>
-        Создано <a href="/authors/asp">А. А. Спиридоновым-мл.</a> с помощью{" "}
-        <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a>
+        由{" "}
+        <a href={joinSegments(pathToRoot(fileData.slug!), "authors/asp")}>
+          小亚历山大·斯皮里多诺夫
+        </a>{" "}
+        使用 <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a>
         {" · "}
-        <button
-          id="cookie-settings"
-          type="button"
-          class="cookie-settings"
-        >
-          О cookie
-        </button>
+        <a href={joinSegments(pathToRoot(fileData.slug!), "documents/")}>文件与政策</a>
       </p>
     </footer>
   )
 
-  Footer.afterDOMLoaded = `
-    const openIssueZoom = (link, english) => {
+  Footer.afterDOMLoaded =
+    ageGate +
+    `
+    const openIssueZoom = (link) => {
       const reader = link.closest('.issue-reader')
       const pages = Array.from(reader.querySelectorAll('.issue-page'))
       let index = pages.indexOf(link.closest('.issue-page'))
@@ -43,7 +52,7 @@ const CustomFooter: QuartzComponentConstructor<Options> = (opts) => {
       video.controls = true; video.playsInline = true; video.preload = 'none'
       const dialog = document.createElement('dialog')
       dialog.className = 'issue-zoom'
-      dialog.setAttribute('aria-label', english ? 'Image viewer' : 'Просмотр изображения')
+      dialog.setAttribute('aria-label', '图像查看器')
       const bar = document.createElement('div')
       bar.className = 'issue-zoom-bar'
       const stage = document.createElement('div')
@@ -73,14 +82,14 @@ const CustomFooter: QuartzComponentConstructor<Options> = (opts) => {
         b.setAttribute('aria-label', label); b.addEventListener('click', action); bar.append(b)
         return b
       }
-      const previous = button('←', english ? 'Previous page' : 'Предыдущая страница', () => showPage(index-1))
+      const previous = button('←', '上一页', () => showPage(index-1))
       const counter = document.createElement('span'); counter.setAttribute('aria-live','polite'); bar.append(counter)
-      const next = button('→', english ? 'Next page' : 'Следующая страница', () => showPage(index+1))
-      const less = button('−', english ? 'Zoom out' : 'Уменьшить', () => zoom(1/1.25))
+      const next = button('→', '下一页', () => showPage(index+1))
+      const less = button('−', '缩小', () => zoom(1/1.25))
       bar.append(percent)
-      const more = button('+', english ? 'Zoom in' : 'Увеличить', () => zoom(1.25))
-      const reset = button('↺', english ? 'Fit image' : 'Сбросить масштаб', () => {scale=1;x=0;y=0;draw()})
-      button('×', english ? 'Close' : 'Закрыть', () => dialog.close())
+      const more = button('+', '放大', () => zoom(1.25))
+      const reset = button('↺', '适应窗口', () => {scale=1;x=0;y=0;draw()})
+      button('×', '关闭', () => dialog.close())
       const showPage = target => {
         if(target<0||target>=pages.length)return
         index=target;video.pause();video.removeAttribute('src');video.load();points.clear();x=0;y=0
@@ -135,11 +144,11 @@ const CustomFooter: QuartzComponentConstructor<Options> = (opts) => {
           const open = document.createElement('button')
           open.type = 'button'
           open.className = 'issue-open-viewer'
-          open.textContent = reader.lang === 'en' ? 'Open viewer' : 'Открыть просмотр'
+          open.textContent = '打开查看器'
           video.after(open)
           open.addEventListener('click', () => {
             reader.querySelectorAll('video').forEach(item=>item.pause())
-            openIssueZoom(open, reader.lang === 'en')
+            openIssueZoom(open)
           })
         })
         reader.querySelectorAll('.issue-page a').forEach(link => {
@@ -147,7 +156,7 @@ const CustomFooter: QuartzComponentConstructor<Options> = (opts) => {
             if(event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return
             event.preventDefault();event.stopPropagation()
             reader.querySelectorAll('video').forEach(video=>video.pause())
-            openIssueZoom(link, reader.lang === 'en')
+            openIssueZoom(link)
           })
         })
         const track = reader.querySelector('.issue-pages')
@@ -182,23 +191,13 @@ const CustomFooter: QuartzComponentConstructor<Options> = (opts) => {
     initIssueReaders()
     document.addEventListener('nav', initIssueReaders)
     const localizeBasesEntryCounts = () => {
-      const entryWord = (count) => {
-        const lastTwo = count % 100
-        const last = count % 10
-
-        if (lastTwo >= 11 && lastTwo <= 14) return "записей"
-        if (last === 1) return "запись"
-        if (last >= 2 && last <= 4) return "записи"
-        return "записей"
-      }
-
       for (const element of document.querySelectorAll(".bases-view-meta")) {
         const match = element.textContent?.trim().match(/^Showing (\\d+) of (\\d+) entries$/)
         if (!match) continue
 
         const shown = Number(match[1])
         const total = Number(match[2])
-        element.textContent = "Показано " + shown + " из " + total + " " + entryWord(total)
+        element.textContent = "显示 " + shown + " 项，共 " + total + " 项"
       }
     }
 

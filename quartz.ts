@@ -4,14 +4,15 @@ import CustomFooter from "./quartz/components/CustomFooter"
 import LegacyOgImage from "./quartz/components/LegacyOgImage"
 import { componentRegistry } from "./quartz/components/registry"
 import { MediaAltText } from "./quartz/plugins/transformers/mediaAltText"
+import { TranslationStatus } from "./quartz/plugins/transformers/translationStatus"
 import type { ExplorerOptions } from "@quartz-community/explorer"
 
 const priorityOrder: Record<string, number> = {
   "Книжный клуб": 1,
   Киноклуб: 2,
-  "Об издательстве": 3,
-  Контакты: 4,
-  Документы: 5,
+  关于出版社: 3,
+  联系我们: 4,
+  文件与政策: 5,
 }
 
 const sortExplorerEntries: NonNullable<ExplorerOptions["sortFn"]> = (a, b) => {
@@ -27,7 +28,7 @@ const sortExplorerEntries: NonNullable<ExplorerOptions["sortFn"]> = (a, b) => {
 
   return (
     priorityDifference ||
-    aName.localeCompare(bName, "ru", {
+    aName.localeCompare(bName, "zh-CN", {
       numeric: true,
       sensitivity: "base",
     })
@@ -45,11 +46,11 @@ componentRegistry.setOptionOverrides("@quartz-community/og-image", {
 })
 
 const footer = CustomFooter({
-  copyrightText: "© 2025–2026 Издательство «Катоблепас»",
+  copyrightText: "© 2025–2026 Catoblepas 出版社",
   links: {
     Telegram: "https://t.me/catoblepaspress",
     YouTube: "https://www.youtube.com/@catoblepaspress",
-    Документы: "/documents/",
+    文件与政策: "documents/",
   },
 })
 
@@ -67,5 +68,6 @@ const layoutOverrides = {
 
 const config = await loadQuartzConfig(undefined, layoutOverrides)
 config.plugins.transformers.push(MediaAltText())
+config.plugins.transformers.push(TranslationStatus())
 export default config
 export const layout = await loadQuartzLayout(layoutOverrides)

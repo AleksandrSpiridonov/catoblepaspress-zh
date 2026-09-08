@@ -5,6 +5,16 @@ import test from "node:test"
 import { yandexMetrikaScript } from "./util/analytics"
 import { canonicalUrlForSlug } from "./util/seo"
 
+test("Chinese project site keeps the base path in home, folder and book canonical URLs", () => {
+  const base = "aleksandrspiridonov.github.io/catoblepaspress-zh"
+  assert.equal(canonicalUrlForSlug(base, "index"), `https://${base}/`)
+  assert.equal(canonicalUrlForSlug(base, "published/index"), `https://${base}/published/`)
+  assert.equal(
+    canonicalUrlForSlug(base, "published/biastape"),
+    `https://${base}/published/biastape`,
+  )
+})
+
 test("production homepage exposes the canonical marketing and analytics contract", () => {
   assert.equal(canonicalUrlForSlug("catoblepaspress.ru", "index"), "https://catoblepaspress.ru/")
   assert.equal(
@@ -37,18 +47,14 @@ test("homepage offers current routes for reading, participation, support, and di
   const homepage = readFileSync(join(process.cwd(), "content", "index.md"), "utf8")
   const bookclub = readFileSync(join(process.cwd(), "content", "projects", "bookclub.md"), "utf8")
 
-  assert.match(homepage, /Заказать «косую бейку»/)
-  assert.match(homepage, /Читать стохастический журнал/)
-  assert.match(homepage, /Limite.*10 августа 2026/)
-  assert.match(homepage, /Странника.*29 августа 2026/)
-  assert.match(homepage, /Письма «Катоблепаса»/)
-  assert.match(homepage, /Все выпуски журнала/)
-  assert.match(homepage, /data-metrika-goal="order_click"/)
-  assert.match(homepage, /data-metrika-goal="journal_click"/)
-  assert.match(homepage, /data-metrika-goal="participation_click"/)
-  assert.match(homepage, /data-metrika-goal="newsletter_click"/)
+  assert.match(homepage, /\[\[published\/biastape#订购\|/)
+  assert.match(homepage, /\[\[journal\/index\|/)
+  assert.match(homepage, /\[\[projects\/filmclub\|/)
+  assert.match(homepage, /\[\[projects\/bookclub\|/)
+  assert.match(homepage, /mailto:vox@catoblepaspress.ru/)
+  assert.match(homepage, /mailto:ungh@catoblepaspress.ru/)
   assert.doesNotMatch(homepage, /\[\[№ 1 \(1\)\|Выпуск № 1 \(1\)\]\]/)
   assert.doesNotMatch(homepage, /## Редакция/)
   assert.match(bookclub, /## Ближайшая встреча/)
-  assert.match(bookclub, /Александр Вельтман, «Странник» \(1832\).*29 августа 2026/s)
+  assert.match(bookclub, /Джулиан Барнс, «Попугай Флобера» \(1984\).*3 октября 2026/s)
 })

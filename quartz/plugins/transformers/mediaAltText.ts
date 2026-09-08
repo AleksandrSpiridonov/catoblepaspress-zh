@@ -28,7 +28,7 @@ function getImageFilename(node: Element): string | undefined {
 }
 
 function makeAlt(kind: MediaKind, title: string): string {
-  return kind === "avatar" ? title : `Обложка книги «${title}»`
+  return kind === "avatar" ? title : `《${title}》封面`
 }
 
 export const MediaAltText: QuartzTransformerPlugin = () => ({

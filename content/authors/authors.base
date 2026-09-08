@@ -7,14 +7,14 @@ formulas:
   author: link(file.path, note.title)
 properties:
   formula.author:
-    displayName: Имя
+    displayName: 姓名
   tags:
-    displayName: Теги
+    displayName: 标签
   books:
-    displayName: Книги
+    displayName: 图书
 views:
   - type: cards
-    name: Авторы
+    name: 作者
     order:
       - tags
     sort:
@@ -25,7 +25,7 @@ views:
     imageFit: cover
     cardSize: 180
   - type: table
-    name: Таблица
+    name: 表格
     order:
       - formula.author
       - tags

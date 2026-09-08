@@ -1,70 +1,70 @@
 ---
-title: Издательство «Катоблепас»
+title: Catoblepas 出版社
+description: 来自圣彼得堡的独立出版社，出版当代诗歌、随机性杂志，并开展文化项目。
+lang: zh-CN
 aliases:
   - Катоблепас
   - «Катоблепас»
   - Издательство «Катоблепас»
-description: Независимое издательство современной поэзии, стохастический журнал и культурные проекты из Санкт-Петербурга
-tags:
 ---
-![[Medvedev E. City, 2018.webp|Город, 2018]]
-_[[medvedevartist|Евгений Медведев]] Город, 2018_
+![[Medvedev E. City, 2018.webp|城市，2018]]
+_[[medvedevartist|叶夫根尼·梅德韦杰夫]]，《城市》，2018_
 
-«Катоблепас» — независимое издательство современной поэзии, стохастический журнал и сообщество культурных проектов из Санкт-Петербурга.
+Catoblepas 是一家来自圣彼得堡的独立出版社，出版当代诗歌和同名随机性杂志，也汇聚了多个文化项目。
 
-> [!abstract] Сейчас в «Катоблепасе»
+> [!abstract] 近期动态
 >
-> - <strong><a href="./published/biastape#заказать" class="internal" data-metrika-goal="order_click">Заказать «косую бейку» Маруси Навки</a></strong> — предзаказ завершён, книга отправляется в печать
-> - <strong><a href="./interviews/marusya-navka-kosaya-beyka" class="internal">Посмотреть и прочитать интервью с Марусей Навкой</a></strong> — о «косой бейке», стихах, музыке и театре
-> - <strong><a href="./journal/" class="internal" data-metrika-goal="journal_click">Читать стохастический журнал</a></strong> — поэзия, проза, эссе, визуальное искусство, кино и музыка
-> - <strong><a href="./projects/filmclub" class="internal" data-metrika-goal="participation_click">Обсудить <em>Sans Soleil</em> Криса Маркера в киноклубе 28 сентября 2026 года</a></strong> — онлайн-встреча в 19:00 МСК
-> - <strong><a href="./projects/bookclub" class="internal" data-metrika-goal="participation_click">Обсудить «Попугая Флобера» Джулиана Барнса в книжном клубе 3 октября 2026 года</a></strong> — онлайн-встреча в 19:00 МСК
+> - **[[published/biastape#订购|订购玛鲁霞·纳夫卡的《斜裁滚边》]]**——预售已结束，图书即将付印。
+> - **[[interviews/marusya-navka-kosaya-beyka|观看或阅读玛鲁霞·纳夫卡访谈（俄语）]]**——谈《斜裁滚边》、诗歌、音乐与戏剧。
+> - **[[journal/index|阅读随机性杂志]]**——诗歌、散文、随笔、视觉艺术、电影与音乐。
+> - **[[projects/filmclub|电影俱乐部：克里斯·马克的《无日》]]**——2026年9月28日，莫斯科时间19:00，线上讨论。
+> - **[[projects/bookclub|读书会：朱利安·巴恩斯的《福楼拜的鹦鹉》]]**——2026年10月3日，莫斯科时间19:00，线上讨论。
 
-## Что мы делаем
+## 我们在做什么
 
-- **[[published/index|Издаём книги]]** — современная поэзия и экспериментальные литературные проекты
-- **[[journal/index|Выпускаем журнал]]** — поэзия, проза, эссе, визуальное искусство, короткий метр и, кончено, музыка
-- **[[projects/index|Собираем сообщества]]** — [[bookclub|книжный]] и [[filmclub|киноклуб]], конкурсы, перфолекции и междисциплинарные проекты
-- **[[interviews/index|Публикуем интервью]]** — разговоры с авторами, художниками и участниками наших проектов
+- **[[published/index|出版图书]]**——当代诗歌与实验性文学项目。
+- **[[journal/index|制作杂志]]**——诗歌、散文、随笔、视觉艺术、短片，当然还有音乐。
+- **[[projects/index|组织文化社群]]**——[[bookclub|读书会]]、[[filmclub|电影俱乐部]]、比赛、表演讲座与跨学科项目。
+- **[[interviews/index|发表访谈]]**——与作者、艺术家及项目参与者的对话。
 
-Издательство основано в 2024 году [[asp|Александром Спиридоновым-мл.]]. Подробнее — [[about|об издательстве и редакции]].
+出版社由[[asp|小亚历山大·斯皮里多诺夫]]于2024年创办。详见[[about|关于出版社与编辑团队]]。
 
-## Издания
+## 图书
 
 ![[published/editions.base]]
 
-[[published/index|Все издания →]]
+[[published/index|全部图书 →]]
 
-## Cтохастический журнал «Катоблепас»
+## Catoblepas 随机性杂志
 
-- [[№ 55 (9)|Выпуск № 55 (9)]]
-- [[№ 34 (8)|Выпуск № 34 (8)]]
-- [[journal/index|Все выпуски журнала]]
+- [[№ 55 (9)|第55（9）期（俄文）]]
+- [[№ 34 (8)|第34（8）期（俄文）]]
+- [[journal/index|全部期刊]]
 
-## Проекты
+## 文化项目
 
-- [[bookclub|Книжный клуб Е. Лебедева]]
-- [[filmclub|Киноклуб им. А. Сергеева]]
-- [[projects/index|Все проекты]]
+- [[bookclub|叶夫根尼·列别杰夫读书会]]
+- [[filmclub|安德烈·谢尔盖耶夫电影俱乐部]]
+- [[projects/index|全部项目]]
 
-## Интервью
+## 访谈
 
-- [[interviews/marusya-navka-kosaya-beyka|Маруся Навка: о «косой бейке», стихах, музыке и театре]]
-- [[interviews/evgeny-medvedev-artistic-perception|Евгений Медведев: «Произведение искусства — это модель зрительного восприятия»]]
-- [[interviews/evgeny-lebedev-poetry|Евгений Лебедев: «Я бы предпочёл, чтобы мою поэзию не читали»]]
-- [[interviews/index|Все интервью]]
+- [[interviews/marusya-navka-kosaya-beyka|玛鲁霞·纳夫卡：谈《斜裁滚边》、诗歌、音乐与戏剧（俄语）]]
+- [[interviews/evgeny-medvedev-artistic-perception|叶夫根尼·梅德韦杰夫：“艺术作品是视觉感知的模型”（俄语）]]
+- [[interviews/evgeny-lebedev-poetry|叶夫根尼·列别杰夫：“我宁愿人们不读我的诗”（俄语）]]
+- [[interviews/index|全部访谈]]
 
-## Переводы и архивы
+## 译文与档案
 
-- [[publications/translations/limite/index|Материалы о фильме «Лимите»]] — статьи, интервью, справочные материалы и фрагменты сценариев о фильме Мариу Пейшоту
+- [[publications/translations/limite/index|关于电影《界限》的资料（俄文）]]——围绕马里奥·佩肖托电影的文章、访谈、参考资料与剧本片段。
 
-## Следить и связаться
+## 关注与联系
 
-- [Telegram издательства](https://t.me/catoblepaspress)
-- [YouTube издательства](https://www.youtube.com/@catoblepaspress)
-- **Официальная рассылка издательства** — новые книги, выпуски и встречи один–два раза в месяц. <a href="mailto:vox@catoblepaspress.ru?subject=Подписка%20на%20рассылку%20издательства%20«Катоблепас»&amp;body=Прошу%20подписать%20меня%20на%20официальную%20рассылку%20издательства%20«Катоблепас»." data-metrika-goal="newsletter_click">Подписаться письмом</a>
-- [ungh@catoblepaspress.ru](mailto:ungh@catoblepaspress.ru)  
-- [[contacts|Все способы связи]]
+- [出版社 Telegram](https://t.me/catoblepaspress)
+- [出版社 YouTube](https://www.youtube.com/@catoblepaspress)
+- **出版社邮件通讯**——每月一至两封，介绍新书、新刊和活动。[发送邮件订阅](mailto:vox@catoblepaspress.ru?subject=订阅Catoblepas邮件通讯)
+- [ungh@catoblepaspress.ru](mailto:ungh@catoblepaspress.ru)
+- [[contacts|全部联系方式]]
 
-> [!Quote] Si enim fallor, sum
-> Августин «О граде Божием», XI, 26
+> [!quote] Si enim fallor, sum
+> 奥古斯丁，《上帝之城》，XI，26

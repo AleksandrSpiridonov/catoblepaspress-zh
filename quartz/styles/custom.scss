@@ -1,5 +1,41 @@
 @use "./variables.scss" as *;
 
+// System CJK fonts keep Chinese text readable without a Google Fonts request.
+:root {
+  --headerFont: "Source Sans Pro", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  --bodyFont: "Source Sans Pro", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+}
+
+:lang(zh) { line-break: strict; }
+
+@media (max-width: 480px) {
+  #quartz-body { grid-template-columns: minmax(0, 1fr); }
+  .page > #quartz-body > .sidebar.left {
+    flex-wrap: wrap;
+    .page-title { flex: 1; min-width: 0; }
+    .spacer { display: none; }
+    > .flex-component { flex-basis: 100%; justify-content: flex-end; }
+  }
+}
+.translation-notice {
+  border-left: 3px solid var(--secondary);
+  background: var(--highlight);
+  padding: 0.8rem 1rem;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  a { margin-inline-start: 0.5em; }
+}
+
+dialog.age-gate {
+  width: 100vw;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+}
+
 // put your custom CSS here!
 .issue-zoom {
   [hidden] { display: none !important; }
