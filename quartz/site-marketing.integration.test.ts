@@ -39,9 +39,9 @@ test("homepage offers current routes for reading, participation, support, and di
 
   assert.match(homepage, /Заказать «косую бейку»/)
   assert.match(homepage, /Читать стохастический журнал/)
-  assert.match(homepage, /Limite.*10 августа 2026/)
-  assert.match(homepage, /Странника.*29 августа 2026/)
-  assert.match(homepage, /Письма «Катоблепаса»/)
+  assert.match(homepage, /projects\/filmclub/)
+  assert.match(homepage, /projects\/bookclub/)
+  assert.match(homepage, /mailto:vox@catoblepaspress.ru/)
   assert.match(homepage, /Все выпуски журнала/)
   assert.match(homepage, /data-metrika-goal="order_click"/)
   assert.match(homepage, /data-metrika-goal="journal_click"/)
@@ -50,5 +50,7 @@ test("homepage offers current routes for reading, participation, support, and di
   assert.doesNotMatch(homepage, /\[\[№ 1 \(1\)\|Выпуск № 1 \(1\)\]\]/)
   assert.doesNotMatch(homepage, /## Редакция/)
   assert.match(bookclub, /## Ближайшая встреча/)
-  assert.match(bookclub, /Александр Вельтман, «Странник» \(1832\).*29 августа 2026/s)
+  const upcomingMeeting = bookclub.split("## Ближайшая встреча")[1]?.split("## Регламент")[0]
+  assert.ok(upcomingMeeting, "Book club must announce an upcoming meeting")
+  assert.match(upcomingMeeting, /\d{1,2} [а-я]+ \d{4} года, \d{1,2}:\d{2} МСК/)
 })
