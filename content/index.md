@@ -15,7 +15,7 @@ Catoblepas 是一家来自圣彼得堡的独立出版社，出版当代诗歌和
 > [!abstract] 近期动态
 >
 > - **[[published/biastape#订购|订购玛鲁霞·纳夫卡的《斜裁滚边》]]**——预售已结束，图书即将付印。
-> - **[[interviews/marusya-navka-kosaya-beyka|观看或阅读玛鲁霞·纳夫卡访谈（俄语）]]**——谈《斜裁滚边》、诗歌、音乐与戏剧。
+> - **[[interviews/marusya-navka-kosaya-beyka|观看或阅读玛鲁霞·纳夫卡访谈（中文文字／俄语视频）]]**——谈《斜裁滚边》、诗歌、音乐与戏剧。
 > - **[[journal/index|阅读随机性杂志]]**——诗歌、散文、随笔、视觉艺术、电影与音乐。
 > - **[[projects/filmclub|电影俱乐部：克里斯·马克的《无日》]]**——2026年9月28日，莫斯科时间19:00，线上讨论。
 > - **[[projects/bookclub|读书会：朱利安·巴恩斯的《福楼拜的鹦鹉》]]**——2026年10月3日，莫斯科时间19:00，线上讨论。
@@ -49,9 +49,9 @@ Catoblepas 是一家来自圣彼得堡的独立出版社，出版当代诗歌和
 
 ## 访谈
 
-- [[interviews/marusya-navka-kosaya-beyka|玛鲁霞·纳夫卡：谈《斜裁滚边》、诗歌、音乐与戏剧（俄语）]]
-- [[interviews/evgeny-medvedev-artistic-perception|叶夫根尼·梅德韦杰夫：“艺术作品是视觉感知的模型”（俄语）]]
-- [[interviews/evgeny-lebedev-poetry|叶夫根尼·列别杰夫：“我宁愿人们不读我的诗”（俄语）]]
+- [[interviews/marusya-navka-kosaya-beyka|玛鲁霞·纳夫卡：谈《斜裁滚边》、诗歌、音乐与戏剧（中文文字／俄语视频）]]
+- [[interviews/evgeny-medvedev-artistic-perception|叶夫根尼·梅德韦杰夫：“艺术作品是视觉感知的模型”（中文文字／俄语视频）]]
+- [[interviews/evgeny-lebedev-poetry|叶夫根尼·列别杰夫：“我宁愿人们不读我的诗”（中文文字／俄语视频）]]
 - [[interviews/index|全部访谈]]
 
 ## 译文与档案
