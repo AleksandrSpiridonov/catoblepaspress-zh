@@ -1,19 +1,20 @@
 ---
-title: Контакты
-description: Связаться с издательством «Катоблепас», предложить проект или задать вопрос о заказе
+title: 联系我们
+description: 联系 Catoblepas 出版社，洽谈项目或咨询图书订购。
+lang: zh-CN
 ---
-## Связаться с издательством
+## 联系出版社
 
-- **Telegram:** [@catoblepaspress](https://t.me/catoblepaspress) — новости, анонсы и новые выпуски
-- **YouTube:** [@catoblepaspress](https://www.youtube.com/@catoblepaspress) — видео издательства
-- **Основная почта:** [ungh@catoblepaspress.ru](mailto:ungh@catoblepaspress.ru) — заказы, сотрудничество и общие вопросы
-- **Рассылка издательства:** [vox@catoblepaspress.ru](mailto:vox@catoblepaspress.ru?subject=Подписка%20на%20рассылку%20издательства%20«Катоблепас»&body=Прошу%20подписать%20меня%20на%20официальную%20рассылку%20издательства%20«Катоблепас».) — подписаться на официальные письма «Катоблепаса»
-- **Прежняя почта:** [catoblepaspress@mail.ru](mailto:catoblepaspress@mail.ru) — продолжает работать
-- **Город:** Санкт-Петербург
+- **Telegram：**[@catoblepaspress](https://t.me/catoblepaspress)——新闻、活动与新刊
+- **YouTube：**[@catoblepaspress](https://www.youtube.com/@catoblepaspress)——出版社视频
+- **主要邮箱：**[ungh@catoblepaspress.ru](mailto:ungh@catoblepaspress.ru)——订购、合作与一般咨询
+- **邮件通讯：**[vox@catoblepaspress.ru](mailto:vox@catoblepaspress.ru?subject=订阅Catoblepas邮件通讯)——申请订阅 Catoblepas 官方通讯
+- **旧邮箱：**[catoblepaspress@mail.ru](mailto:catoblepaspress@mail.ru)——仍可使用
+- **城市：**圣彼得堡
 
-Чтобы мы быстрее ответили, укажите в теме письма книгу, проект или характер предложения.
+请在邮件主题中注明书名、项目或合作事项，以便我们更快回复。
 
-## Участвовать
+## 参与活动
 
-- [[bookclub#Присоединиться|Книжный клуб]]
-- [[filmclub#Присоединиться|Киноклуб]]
+- [[bookclub|读书会（俄语）]]
+- [[filmclub|电影俱乐部（俄语）]]

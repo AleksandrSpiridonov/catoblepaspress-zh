@@ -83,7 +83,7 @@ export default (() => {
         <link rel="icon" href={iconPath} type="image/x-icon" sizes="16x16 32x32 48x48 120x120" />
         <link rel="apple-touch-icon" href={appleTouchIconPath} sizes="180x180" />
         <meta name="description" content={description} />
-        <meta name="copyright" content="© 2025–2026 Издательство «Катоблепас»" />
+        <meta name="copyright" content="© 2025–2026 Catoblepas 出版社" />
         <meta name="generator" content="Quartz" />
 
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}

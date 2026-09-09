@@ -1,5 +1,4 @@
 import { jsx } from "preact/jsx-runtime"
-
 const styles = `.language-switcher {
   align-items: center;
   background: none;
@@ -17,31 +16,31 @@ const styles = `.language-switcher {
   text-decoration: none;
   width: 24px;
 }`
-
 const LanguageSwitcher = (opts) => {
   const Component = ({ cfg, fileData, displayClass }) => {
-    const configuredBase = cfg.baseUrl ?? opts.russianBaseUrl
-    const currentUrl = new URL(
-      configuredBase.includes("://") ? configuredBase : `https://${configuredBase}`,
-    )
-    const currentHostname = currentUrl.hostname
-    const englishHostname = new URL(opts.englishBaseUrl).hostname
-    const isEnglishSite = currentHostname === englishHostname
-    const targetUrl = new URL(isEnglishSite ? opts.russianBaseUrl : opts.englishBaseUrl)
-    const slug = fileData.slug ?? "index"
-    const basePath = targetUrl.pathname.replace(/\/$/, "")
-    targetUrl.pathname = slug === "index" ? `${basePath}/` : `${basePath}/${slug}`
-
-    return jsx("a", {
-      "aria-label": isEnglishSite ? "Перейти на русскую версию" : "Switch to English",
-      class: `${displayClass ?? ""} language-switcher`.trim(),
-      href: targetUrl.toString(),
-      children: isEnglishSite ? "RU" : "EN",
+    const slug = (fileData.slug ?? "index").replace(/\/index$/, "")
+    const languages = [
+      { label: "RU", name: "\u67E5\u770B\u4FC4\u6587\u7248\u672C", base: opts.russianBaseUrl },
+      { label: "EN", name: "\u67E5\u770B\u82F1\u6587\u7248\u672C", base: opts.englishBaseUrl },
+    ]
+    return /* @__PURE__ */ jsx("nav", {
+      class: displayClass ?? "",
+      "aria-label": "\u8BED\u8A00\u7248\u672C",
+      lang: "zh-CN",
+      style: { display: "flex", gap: "0.5rem" },
+      children: languages.map(({ label, name, base }) => {
+        const url = new URL(base)
+        url.pathname = url.pathname.replace(/\/$/, "") + (slug === "index" ? "/" : "/" + slug)
+        return /* @__PURE__ */ jsx("a", {
+          class: "language-switcher",
+          href: url.toString(),
+          "aria-label": name,
+          children: label,
+        })
+      }),
     })
   }
-
   Component.css = styles
   return Component
 }
-
 export { LanguageSwitcher }

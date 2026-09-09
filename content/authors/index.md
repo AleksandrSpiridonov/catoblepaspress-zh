@@ -1,9 +1,12 @@
 ---
-title: Авторы
-description:
+title: 作者
+description: Catoblepas 出版社与杂志的作者及参与者。
+lang: zh-CN
 aliases:
   - Авторы
 ---
-Авторы и участники жизни [[published/index|издательства]] «Катоблепас» и его [[journal/index|журнала]].
+Catoblepas [[published/index|出版社]]及其[[journal/index|杂志]]的作者与参与者。
+
+作者简介目前保留俄文。
 
 ![[authors.base]]

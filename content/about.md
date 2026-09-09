@@ -1,21 +1,28 @@
 ---
-title: Об издательстве
-description: Экспериментальное инди-издательство «Катоблепас»
+title: 关于出版社
+description: 实验性独立出版社 Catoblepas 及其编辑团队。
+lang: zh-CN
 ---
-> [!Quote] Si enim fallor, sum
-> Августин «О граде Божием», XI, 26 
-## О нас
-Экспериментальное инди-издательство «Катоблепас» основано в 2024 году [[asp|Александром Спиридоновым-мл.]]. Мы выпустили несколько поэтических [[published/index|книг]] в оформлении художника [[medvedevartist|Евгения Медведева]], а также одноименный [[journal/index|журнал]] нашего объединения. 
-## Редакция
-- Собиратель и растворитель смыслов: [[asp|Александр Спиридонов-мл.]]
-- Адвайзер, хранитель межъязыкового хаоса: [[ylisse|Елизавета Калужская]]
-- Футурологический конгресс: [[xeniaspiridonova|Ксения Спиридонова]]
+> [!quote] Si enim fallor, sum
+> 奥古斯丁，《上帝之城》，XI，26
 
-![[editorialpolicy#Редакционная политика издательства и журнала «Катоблепас»|Редакционная политика]]
-## Контакты
-- [telegram](https://t.me/catoblepaspress)
-- [youtube](https://www.youtube.com/@catoblepaspress)
-- [ungh@catoblepaspress.ru](mailto:ungh@catoblepaspress.ru) — основная почта
-- [vox@catoblepaspress.ru](mailto:vox@catoblepaspress.ru?subject=Подписка%20на%20рассылку%20издательства%20«Катоблепас»&body=Прошу%20подписать%20меня%20на%20официальную%20рассылку%20издательства%20«Катоблепас».) — официальная рассылка издательства, напишите письмо, чтобы подписаться на рассылку
-- [catoblepaspress@mail.ru](mailto:catoblepaspress@mail.ru) — прежняя почта, работает на время перехода
-- Санкт-Петербург
+## 关于我们
+
+实验性独立出版社 Catoblepas 由[[asp|小亚历山大·斯皮里多诺夫]]于2024年创办。我们已出版多部由艺术家[[medvedevartist|叶夫根尼·梅德韦杰夫]]设计的[[published/index|诗集]]，以及我们同人团体的同名[[journal/index|杂志]]。
+
+## 编辑团队
+
+- 意义的收集者与溶解者：[[asp|小亚历山大·斯皮里多诺夫]]
+- 顾问，语言间混沌的守护者：[[ylisse|叶丽扎韦塔·卡卢日斯卡娅]]
+- 未来学大会：[[xeniaspiridonova|克谢尼娅·斯皮里多诺娃]]
+
+[[documents/editorialpolicy|出版社与杂志的编辑方针（俄文）]]
+
+## 联系方式
+
+- [Telegram](https://t.me/catoblepaspress)
+- [YouTube](https://www.youtube.com/@catoblepaspress)
+- [ungh@catoblepaspress.ru](mailto:ungh@catoblepaspress.ru)——主要邮箱
+- [vox@catoblepaspress.ru](mailto:vox@catoblepaspress.ru?subject=订阅Catoblepas邮件通讯)——官方邮件通讯；发送邮件即可申请订阅
+- [catoblepaspress@mail.ru](mailto:catoblepaspress@mail.ru)——旧邮箱，过渡期间仍可使用
+- 圣彼得堡

@@ -1,73 +1,50 @@
-name: Deploy Quartz site to GitHub Pages
- 
+name: Deploy Chinese site
+
 on:
   push:
-    branches:
-      - v5
- 
+    branches: [main]
+  workflow_dispatch:
+
 permissions:
   contents: read
-  pages: write
-  id-token: write
- 
+
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: false
- 
+
 jobs:
   build:
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # Fetch all history for git info
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-      - name: Install Dependencies
-        run: npm ci
-      - name: Prepare Quartz plugins
-        run: npm run install-plugins
-      - name: Build Quartz
-        run: npx quartz build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: public
-
-      - name: Upload Fair deployment artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: site-build-${{ github.sha }}
-          path: public
-          retention-days: 1
-
-  publish-fair:
-    needs: build
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    timeout-minutes: 15
     steps:
-      - name: Download site build
-        uses: actions/download-artifact@v4
+      - uses: actions/checkout@v6
         with:
-          name: site-build-${{ github.sha }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+      - uses: actions/configure-pages@v5
+      - run: npm ci
+      - run: npm run install-plugins
+      - run: npx tsc --noEmit
+      - run: npm test
+      - run: node quartz/bootstrap-cli.mjs build --concurrency=1
+      - run: node tools/verify-zh.mjs
+      - uses: actions/upload-pages-artifact@v3
+        with:
           path: public
-
-      - name: Publish build for Fair
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: fair-site
-          publish_dir: ./public
-          force_orphan: true
- 
   deploy:
     needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         id: deployment

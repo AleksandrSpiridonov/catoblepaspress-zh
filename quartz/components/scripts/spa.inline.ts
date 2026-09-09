@@ -109,6 +109,8 @@ async function _navigate(url: URL, isBack: boolean = false) {
 
   document.querySelector(".navigation-progress")?.remove()
   micromorph(document.body, html.body)
+  document.documentElement.lang = html.documentElement.lang
+  document.documentElement.dir = html.documentElement.dir
 
   // scroll into place and add history
   if (!isBack) {
