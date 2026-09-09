@@ -55,8 +55,8 @@ test("homepage offers current routes for reading, participation, support, and di
   assert.match(homepage, /mailto:ungh@catoblepaspress.ru/)
   assert.doesNotMatch(homepage, /\[\[№ 1 \(1\)\|Выпуск № 1 \(1\)\]\]/)
   assert.doesNotMatch(homepage, /## Редакция/)
-  assert.match(bookclub, /## Ближайшая встреча/)
-  const upcomingMeeting = bookclub.split("## Ближайшая встреча")[1]?.split("## Регламент")[0]
+  assert.match(bookclub, /## 下次聚会/)
+  const upcomingMeeting = bookclub.split("## 下次聚会")[1]?.split("## 活动规则")[0]
   assert.ok(upcomingMeeting, "Book club must announce an upcoming meeting")
-  assert.match(upcomingMeeting, /\d{1,2} [а-я]+ \d{4} года, \d{1,2}:\d{2} МСК/)
+  assert.match(upcomingMeeting, /\d{4}年\d{1,2}月\d{1,2}日，莫斯科时间\d{1,2}:\d{2}/)
 })
