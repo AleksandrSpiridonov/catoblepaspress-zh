@@ -3,16 +3,17 @@ import fs from "node:fs"
 import path from "node:path"
 import { fromHtml } from "hast-util-from-html"
 import { visit } from "unist-util-visit"
+import { slugifyFilePath } from "@quartz-community/utils"
 
 const pages = fs
   .readdirSync("content", { recursive: true })
   .filter((file) => file.endsWith(".md"))
   .filter((file) => /\nlang: zh-CN\r?\n/.test(fs.readFileSync(path.join("content", file), "utf8")))
-assert.equal(pages.length, 39)
+assert.equal(pages.length, 42)
 const base = "https://zh.catoblepaspress.ru/"
 const problems = []
 for (const file of pages) {
-  const slug = file.replaceAll("\\", "/").replace(/\.md$/, "")
+  const slug = slugifyFilePath(file.replaceAll("\\", "/"))
   const html = fs.readFileSync(path.join("public", slug + ".html"), "utf8")
   assert.match(html, /<html lang="zh-CN"/)
   assert.doesNotMatch(html, /class="translation-notice"/)
