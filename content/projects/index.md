@@ -9,5 +9,5 @@ aliases:
 
 - [[bookclub|读书会（俄语）]]
 - [[filmclub|电影俱乐部（俄语）]]
-- [[voxcatoblepae|Vox Catoblepae（俄文）]]
-- [[performancelecture|表演讲座《生态诗歌创作》（俄文）]]
+- [[voxcatoblepae|Vox Catoblepae（中文介绍／原语言作品）]]
+- [[performancelecture|表演讲座《生态诗歌创作》]]
