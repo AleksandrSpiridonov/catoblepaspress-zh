@@ -9,7 +9,7 @@ const pages = fs
   .filter((file) => file.endsWith(".md"))
   .filter((file) => /\nlang: zh-CN\r?\n/.test(fs.readFileSync(path.join("content", file), "utf8")))
 assert.equal(pages.length, 15)
-const base = "https://aleksandrspiridonov.github.io/catoblepaspress-zh/"
+const base = "https://zh.catoblepaspress.ru/"
 const problems = []
 for (const file of pages) {
   const slug = file.replaceAll("\\", "/").replace(/\.md$/, "")
@@ -26,11 +26,8 @@ for (const file of pages) {
     const href = node.properties.href
     const url = new URL(href, canonical)
     if (url.origin !== new URL(base).origin) return
-    if (!url.pathname.startsWith("/catoblepaspress-zh/")) {
-      problems.push(`${slug}: link escapes site prefix: ${href}`)
-      return
-    }
-    const target = decodeURIComponent(url.pathname.slice("/catoblepaspress-zh/".length))
+    assert.ok(!url.pathname.startsWith("/catoblepaspress-zh/"), `Old site prefix: ${href}`)
+    const target = decodeURIComponent(url.pathname.slice(1))
     const candidates = [target, target + ".html", path.join(target, "index.html")].map((p) =>
       path.join("public", p),
     )
@@ -52,7 +49,7 @@ const original = fs.readFileSync("public/authors/asp.html", "utf8")
 assert.match(original, /<html lang="ru-RU"/)
 assert.match(original, /本页暂为俄文原文/)
 assert.match(original, /href="https:\/\/catoblepaspress.ru\/authors\/asp"/)
-assert.equal(fs.existsSync("public/CNAME"), false)
+assert.equal(fs.readFileSync("public/CNAME", "utf8").trim(), "zh.catoblepaspress.ru")
 const scripts = fs
   .readdirSync("public", { recursive: true })
   .filter((f) => f.endsWith(".js"))

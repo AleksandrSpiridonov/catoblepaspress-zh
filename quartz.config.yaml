@@ -6,7 +6,7 @@ configuration:
   enablePopovers: true
   analytics: null
   locale: zh-CN
-  baseUrl: aleksandrspiridonov.github.io/catoblepaspress-zh
+  baseUrl: zh.catoblepaspress.ru
   ignorePatterns:
     - private
     - templates
@@ -119,7 +119,7 @@ plugins:
   - source: "@quartz-community/og-image"
     enabled: false
   - source: "@quartz-community/cname"
-    enabled: false
+    enabled: true
   - source: "@quartz-community/content-page"
     enabled: true
   - source: "@quartz-community/folder-page"
