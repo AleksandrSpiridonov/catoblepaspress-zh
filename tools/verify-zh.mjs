@@ -9,7 +9,7 @@ const pages = fs
   .readdirSync("content", { recursive: true })
   .filter((file) => file.endsWith(".md"))
   .filter((file) => /\nlang: zh-CN\r?\n/.test(fs.readFileSync(path.join("content", file), "utf8")))
-assert.equal(pages.length, 49)
+assert.equal(pages.length, 52)
 const base = "https://zh.catoblepaspress.ru/"
 const problems = []
 for (const file of pages) {
