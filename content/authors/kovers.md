@@ -1,25 +1,43 @@
 ---
 aliases:
   - Константин Верстуков
-title: Константин Верстуков
-description: Писатель-фантаст, лингвист, создатель искусственного языка, автор цикла рассказов "Сага о двух Империях"
+title: 康斯坦丁·韦尔斯图科夫
+lang: zh-CN
+description: 幻想文学作家、语言学家、人造语言创作者，系列故事《两大帝国传奇》的作者
 tags:
-  - писатель
-  - лингвист
+  - 作家
+  - 语言学家
 ---
-## Об авторе
-Константин Верстуков (2001, Санкт-Петербург)— писатель-фантаст, лингвист, создатель собственного искусственного языка. Автор цикла рассказов "[Сага о двух Империях](https://litnet.com/ru/kovers-u10651270/stories)".
-## Участие в журнале
-- [[№ 5 (4)|Выпуск № 5 (4)]]
-## Книги
-- Сага о двух Империях
-	- [Жизнь](https://author.today/work/480786), 2025
-	- [Изгнанные](https://author.today/work/423904), 2025
-	- [Предатель](https://author.today/work/379072), 2024
-	- [Рассвет](https://author.today/work/341220), 2023
-## Контакты
-- [ВК](https://vk.com/two_empires)
-- [ТГ](https://t.me/two_empires)
+
+
+<span id="об-авторе"></span>
+
+## 作者简介
+
+康斯坦丁·韦尔斯图科夫（Константин Верстуков，2001年生于圣彼得堡）是幻想文学作家、语言学家，创造了自己的人造语言。他是系列故事《[两大帝国传奇](https://litnet.com/ru/kovers-u10651270/stories)》的作者。
+
+<span id="участие-в-журнале"></span>
+
+## 杂志刊载
+
+- [[№ 5 (4)|第 5 (4) 期]]
+
+<span id="книги"></span>
+
+## 著作
+
+- 两大帝国传奇（Сага о двух Империях）
+  - [生命（Жизнь）](https://author.today/work/480786)，2025年
+  - [被放逐者（Изгнанные）](https://author.today/work/423904)，2025年
+  - [叛徒（Предатель）](https://author.today/work/379072)，2024年
+  - [黎明（Рассвет）](https://author.today/work/341220)，2023年
+
+<span id="контакты"></span>
+
+## 联系方式
+
+- [VK](https://vk.com/two_empires)
+- [Telegram](https://t.me/two_empires)
 - [Author.Today](https://author.today/u/two_empires/works)
-- [Литнет](https://litnet.com/ru/kovers-u10651270/stories)
-- [Дзен](https://dzen.ru/two_empires)
+- [Litnet](https://litnet.com/ru/kovers-u10651270/stories)
+- [Dzen](https://dzen.ru/two_empires)
