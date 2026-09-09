@@ -8,7 +8,7 @@ const pages = fs
   .readdirSync("content", { recursive: true })
   .filter((file) => file.endsWith(".md"))
   .filter((file) => /\nlang: zh-CN\r?\n/.test(fs.readFileSync(path.join("content", file), "utf8")))
-assert.equal(pages.length, 15)
+assert.equal(pages.length, 21)
 const base = "https://zh.catoblepaspress.ru/"
 const problems = []
 for (const file of pages) {
@@ -45,10 +45,10 @@ for (const file of pages) {
   })
 }
 assert.deepEqual(problems, [])
-const original = fs.readFileSync("public/authors/asp.html", "utf8")
+const original = fs.readFileSync("public/authors/ionidi.html", "utf8")
 assert.match(original, /<html lang="ru-RU"/)
 assert.match(original, /本页暂为俄文原文/)
-assert.match(original, /href="https:\/\/catoblepaspress.ru\/authors\/asp"/)
+assert.match(original, /href="https:\/\/catoblepaspress.ru\/authors\/ionidi"/)
 assert.equal(fs.readFileSync("public/CNAME", "utf8").trim(), "zh.catoblepaspress.ru")
 const scripts = fs
   .readdirSync("public", { recursive: true })
