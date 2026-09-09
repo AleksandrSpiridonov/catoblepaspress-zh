@@ -7,6 +7,6 @@ aliases:
 ---
 Catoblepas [[published/index|出版社]]及其[[journal/index|杂志]]的作者与参与者。
 
-部分作者简介已译为中文；尚未翻译的页面保留俄文，并附有说明。
+所有作者简介均已译为中文；链接中的部分作品仍为俄文原文。
 
 ![[authors.base]]
