@@ -7,6 +7,7 @@ import type {
 interface Options {
   englishBaseUrl: string
   russianBaseUrl: string
+  hindiBaseUrl: string
 }
 
 const styles = `.language-switcher {
@@ -29,10 +30,11 @@ const styles = `.language-switcher {
 
 export const LanguageSwitcher: QuartzComponentConstructor<Options> = (opts) => {
   const Component: QuartzComponent = ({ cfg, fileData, displayClass }: QuartzComponentProps) => {
-    const slug = (fileData.slug ?? "index").replace(/\/index$/, "")
+    const slug = (fileData.slug ?? "index").replace(/\/index$/, "/")
     const languages = [
       { label: "RU", name: "查看俄文版本", base: opts.russianBaseUrl },
       { label: "EN", name: "查看英文版本", base: opts.englishBaseUrl },
+      { label: "HI", name: "查看印地语版本", base: opts.hindiBaseUrl },
     ]
     return (
       <nav
