@@ -20,7 +20,8 @@
     "defaultEnabled": true,
     "defaultOptions": {
       "englishBaseUrl": "https://en.catoblepaspress.ru",
-      "russianBaseUrl": "https://catoblepaspress.ru"
+      "russianBaseUrl": "https://catoblepaspress.ru",
+      "hindiBaseUrl": "https://hi.catoblepaspress.ru"
     },
     "components": {
       "LanguageSwitcher": {
