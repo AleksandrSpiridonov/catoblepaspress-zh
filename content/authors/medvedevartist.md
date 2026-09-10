@@ -41,6 +41,42 @@ books:
 
 <span id="обложки"></span>
 
+## 作品
+
+<section class="artist-gallery" aria-label="叶夫根尼·梅德韦杰夫的作品" aria-roledescription="轮播图">
+<div class="artist-gallery-stage">
+<figure class="artist-gallery-slide"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-01.webp" alt="叶夫根尼·梅德韦杰夫的作品 — 1" width="420" height="445" loading="lazy" decoding="async"></figure>
+<figure class="artist-gallery-slide"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-02.webp" alt="叶夫根尼·梅德韦杰夫的作品 — 2" width="420" height="439" loading="lazy" decoding="async"></figure>
+<figure class="artist-gallery-slide"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-03.webp" alt="叶夫根尼·梅德韦杰夫的作品 — 3" width="420" height="420" loading="lazy" decoding="async"></figure>
+<figure class="artist-gallery-slide"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-04.webp" alt="叶夫根尼·梅德韦杰夫的作品 — 4" width="420" height="420" loading="lazy" decoding="async"></figure>
+<figure class="artist-gallery-slide"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-05.webp" alt="叶夫根尼·梅德韦杰夫的作品 — 5" width="420" height="443" loading="lazy" decoding="async"></figure>
+<figure class="artist-gallery-slide"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-06.webp" alt="叶夫根尼·梅德韦杰夫的作品 — 6" width="420" height="430" loading="lazy" decoding="async"></figure>
+<figure class="artist-gallery-slide"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-07.webp" alt="叶夫根尼·梅德韦杰夫的作品 — 7" width="420" height="480" loading="lazy" decoding="async"></figure>
+<figure class="artist-gallery-slide"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-08.webp" alt="叶夫根尼·梅德韦杰夫的作品 — 8" width="420" height="447" loading="lazy" decoding="async"></figure>
+<figure class="artist-gallery-slide"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-09.webp" alt="叶夫根尼·梅德韦杰夫的作品 — 9" width="420" height="420" loading="lazy" decoding="async"></figure>
+<figure class="artist-gallery-slide"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-10.webp" alt="叶夫根尼·梅德韦杰夫的作品 — 10" width="420" height="439" loading="lazy" decoding="async"></figure>
+<figure class="artist-gallery-slide"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-11.webp" alt="叶夫根尼·梅德韦杰夫的作品 — 11" width="420" height="460" loading="lazy" decoding="async"></figure>
+<figure class="artist-gallery-slide"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-12.webp" alt="叶夫根尼·梅德韦杰夫的作品 — 12" width="420" height="440" loading="lazy" decoding="async"></figure>
+<figure class="artist-gallery-slide"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-13.webp" alt="叶夫根尼·梅德韦杰夫的作品 — 13" width="420" height="420" loading="lazy" decoding="async"></figure>
+</div>
+<div class="artist-gallery-controls"><button type="button" data-art-prev aria-label="上一幅作品">←</button><span data-art-status aria-live="polite" aria-atomic="true">1 / 13</span><button type="button" data-art-next aria-label="下一幅作品">→</button></div>
+<div class="artist-gallery-thumbs" role="group" aria-label="选择作品">
+<button type="button" data-art-index="0" aria-label="查看作品 1" aria-pressed="true"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-01.webp" alt="" width="50" height="58" loading="lazy"></button>
+<button type="button" data-art-index="1" aria-label="查看作品 2" aria-pressed="false"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-02.webp" alt="" width="50" height="58" loading="lazy"></button>
+<button type="button" data-art-index="2" aria-label="查看作品 3" aria-pressed="false"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-03.webp" alt="" width="50" height="58" loading="lazy"></button>
+<button type="button" data-art-index="3" aria-label="查看作品 4" aria-pressed="false"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-04.webp" alt="" width="50" height="58" loading="lazy"></button>
+<button type="button" data-art-index="4" aria-label="查看作品 5" aria-pressed="false"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-05.webp" alt="" width="50" height="58" loading="lazy"></button>
+<button type="button" data-art-index="5" aria-label="查看作品 6" aria-pressed="false"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-06.webp" alt="" width="50" height="58" loading="lazy"></button>
+<button type="button" data-art-index="6" aria-label="查看作品 7" aria-pressed="false"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-07.webp" alt="" width="50" height="58" loading="lazy"></button>
+<button type="button" data-art-index="7" aria-label="查看作品 8" aria-pressed="false"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-08.webp" alt="" width="50" height="58" loading="lazy"></button>
+<button type="button" data-art-index="8" aria-label="查看作品 9" aria-pressed="false"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-09.webp" alt="" width="50" height="58" loading="lazy"></button>
+<button type="button" data-art-index="9" aria-label="查看作品 10" aria-pressed="false"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-10.webp" alt="" width="50" height="58" loading="lazy"></button>
+<button type="button" data-art-index="10" aria-label="查看作品 11" aria-pressed="false"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-11.webp" alt="" width="50" height="58" loading="lazy"></button>
+<button type="button" data-art-index="11" aria-label="查看作品 12" aria-pressed="false"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-12.webp" alt="" width="50" height="58" loading="lazy"></button>
+<button type="button" data-art-index="12" aria-label="查看作品 13" aria-pressed="false"><img src="https://media.catoblepaspress.ru/authors/medvedevartist/gallery/work-13.webp" alt="" width="50" height="58" loading="lazy"></button>
+</div>
+</section>
+
 ## 封面设计
 
 - [[mistakes|青春的错误]]——封面、字体。
