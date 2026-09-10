@@ -21,7 +21,7 @@ cover: "[[biastape.webp]]"
 请选择版本并提交订单。本书为俄文原版；中文书名用于介绍。如表单无法打开，请发送邮件至 [catoblepaspress@mail.ru](mailto:catoblepaspress@mail.ru)，主题注明“косая бейка”。
 
 > [!success] 预售已结束
-> 感谢所有支持出版并参与预售的读者。根据俄文页面公告，本书将在本周送往印刷厂。新书发布活动计划于9月下旬举行，具体日期、地点及详情将另行公布。
+> 感谢所有支持出版并参与预售的读者。俄文原公告称，本书将在公告发布当周送往印刷厂。新书发布活动计划于9月下旬举行，具体日期、地点及详情将另行公布。
 >
 > 已参与预售的读者请检查邮箱，包括垃圾邮件文件夹。
 
@@ -46,7 +46,7 @@ cover: "[[biastape.webp]]"
 > [!info] 如何订购
 > 填写表单后，我们会通过邮件告知付款和收书方式。表单为俄文。
 
-提交前，请阅读[[documents/privacy|个人数据处理政策（俄文）]]和[[documents/personal-data-consent|个人数据处理同意书（俄文）]]。
+提交前，请阅读[[documents/privacy|个人数据处理政策]]和[[documents/personal-data-consent|个人数据处理同意书]]。
 
 <iframe title="《斜裁滚边》订购表单（俄文）" src="https://docs.google.com/forms/d/e/1FAIpQLSdEbOzuysovGTcVuT2_FwNurZ3S6g1zyGsdZLbjpg3fY5AlrA/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">正在加载……</iframe>
 
@@ -87,4 +87,4 @@ ISBN 978-5-600-05479-0
 > ——谢瓦斯季扬·奥博兹内（Севастьян Обозный）
 
 > [!tip] 作者访谈
-> 观看或阅读[[interviews/marusya-navka-kosaya-beyka|玛鲁霞·纳夫卡访谈（俄语）]]，听她谈《斜裁滚边》、诗歌、音乐与戏剧。
+> 观看或阅读[[interviews/marusya-navka-kosaya-beyka|玛鲁霞·纳夫卡访谈（中文文字／俄语视频）]]，听她谈《斜裁滚边》、诗歌、音乐与戏剧。

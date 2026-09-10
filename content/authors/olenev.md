@@ -46,7 +46,7 @@ avatar: "https://media.catoblepaspress.ru/authors/olenev/portrait.webp"
 你是其中的法官与舵手  
 园丁，也是巡警  
 而我——和你一样  
-折开枝条与灌木  
+折断枝条与灌木  
 
 为了摸索，为了找到  
 自己的小径，重新开始  
@@ -61,7 +61,7 @@ avatar: "https://media.catoblepaspress.ru/authors/olenev/portrait.webp"
 为了驱散那片迷雾  
 你我心中都有一眼源泉  
 那辨别事物的天赋  
-没有它，你连自己也不属于  
+没有它，你便不再属于自己  
 
 不要厌倦寻找答案  
 一切并非总是“是或不是”  

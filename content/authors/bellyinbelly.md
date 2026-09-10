@@ -40,7 +40,7 @@ books:
 ### 奖项
 
 - [[voxcatoblepae|Vox Catoblepae]]，2025年。
-- [Брунделяк моего сердца](https://vk.com/prbrundulyak)，2025年。
+- [Брунделяк моего сердца](https://vk.com/prbrundulyak)，2025年，入围短名单。
 
 <span id="библиография"></span>
 
