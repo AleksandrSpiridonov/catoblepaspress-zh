@@ -7,13 +7,19 @@ export const TranslationStatus: QuartzTransformerPlugin = () => ({
   htmlPlugins: () => [
     () => (tree, file) => {
       if (file.data.frontmatter?.lang === "zh-CN") return
-      if (file.data.frontmatter) file.data.frontmatter.lang = "ru-RU"
+      const italian = file.data.frontmatter?.lang === "it-IT"
+      if (file.data.frontmatter) file.data.frontmatter.lang = italian ? "it-IT" : "ru-RU"
       tree.children.unshift({
         type: "element",
         tagName: "aside",
         properties: { className: ["translation-notice"], lang: "zh-CN" },
         children: [
-          { type: "text", value: "本页暂为俄文原文，中文翻译尚未完成。" },
+          {
+            type: "text",
+            value: italian
+              ? "本页诗歌保留意大利文原文，未译为中文。"
+              : "本页保留俄文内容，未译为中文。",
+          },
           {
             type: "element",
             tagName: "a",
