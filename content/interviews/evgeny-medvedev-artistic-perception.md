@@ -12,10 +12,9 @@ date: 2026-02-05
 > [!video] 观看访谈（俄语）
 > 访谈收录于 Catoblepas 杂志[[№ 21 (7)|第21期]]。
 
-<video controls playsinline preload="metadata" style="width: 100%; height: auto;" aria-label="叶夫根尼·梅德韦杰夫访谈（俄语视频）">
-  <source src="https://media.catoblepaspress.ru/journal/issue-07/ru/page-03.mp4" type="video/mp4">
-  <a href="https://media.catoblepaspress.ru/journal/issue-07/ru/page-03.mp4">打开视频</a>
-</video>
+<iframe src="https://www.youtube-nocookie.com/embed/aOax5DNx30Y" title="叶夫根尼·梅德韦杰夫访谈" width="100%" style="aspect-ratio: 16 / 9; height: auto; border: 0;" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+可在 YouTube 播放器设置中选择字幕语言。
 
 艺术家[[medvedevartist|叶夫根尼·梅德韦杰夫]]谈在帝国美术学院的学习、写生、自画像、即兴创作，以及他关于艺术感知的书。
 
