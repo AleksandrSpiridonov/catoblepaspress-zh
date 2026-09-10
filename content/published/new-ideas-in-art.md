@@ -9,7 +9,7 @@ year: 2026
 status: 筹备出版
 formats:
   - 纸质书
-cover: "[[novye-idei-v-iskusstve-book-mockup-square.webp]]"
+cover: "https://zh.catoblepaspress.ru/images/novye-idei-v-iskusstve-book-mockup-square.webp"
 ---
 ![[novye-idei-v-iskusstve-book-mockup-square.webp]]
 

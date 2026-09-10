@@ -10,7 +10,7 @@ status: 已出版
 formats:
   - 在线阅读
   - PDF
-cover: "[[mistakesCover.webp]]"
+cover: "https://zh.catoblepaspress.ru/images/mistakescover.webp"
 ---
 ![[mistakesCover.webp]]
 

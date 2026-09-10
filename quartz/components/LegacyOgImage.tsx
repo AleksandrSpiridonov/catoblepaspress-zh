@@ -1,40 +1,21 @@
+import { readFileSync } from "node:fs"
 import type { SocialImageOptions } from "@quartz-community/og-image"
-import type { Theme } from "../util/theme"
 import { ogWatercolorRail } from "./ogWatercolorRail"
 
-const fontName = (font: string | { name: string }) => (typeof font === "string" ? font : font.name)
-
-function sectionLabel(slug: string, english: boolean) {
-  const path = slug.replace(/^\/+|\/+$/g, "").replace(/\/index$/, "")
-  const section = path.split("/")[0]
-  if (path.split("/").includes("translations")) return english ? "TRANSLATIONS" : "ПЕРЕВОДЫ"
-  const labels: Record<string, [string, string, string, string]> = {
-    interviews: ["ИНТЕРВЬЮ", "ИНТЕРВЬЮ", "INTERVIEW", "INTERVIEWS"],
-    authors: ["АВТОР", "АВТОРЫ", "AUTHOR", "AUTHORS"],
-    published: ["ИЗДАНИЕ", "ИЗДАНИЯ", "BOOK", "BOOKS"],
-    publications: ["ПУБЛИКАЦИЯ", "ПУБЛИКАЦИИ", "PUBLICATION", "PUBLICATIONS"],
-    projects: ["ПРОЕКТ", "ПРОЕКТЫ", "PROJECT", "PROJECTS"],
-    documents: ["ДОКУМЕНТ", "ДОКУМЕНТЫ", "DOCUMENT", "DOCUMENTS"],
-    journal: ["ЖУРНАЛ", "ЖУРНАЛ", "JOURNAL", "JOURNAL"],
-    translations: ["ПЕРЕВОДЫ", "ПЕРЕВОДЫ", "TRANSLATIONS", "TRANSLATIONS"],
-  }
-  if (!path || path === "index" || path === "about")
-    return english ? "PUBLISHING HOUSE" : "ИЗДАТЕЛЬСТВО"
-  return (
-    labels[section]?.[(english ? 2 : 0) + (path === section ? 1 : 0)] ??
-    (english ? "CATOBLEPAS" : "КАТОБЛЕПАС")
-  )
-}
+const chineseFont = readFileSync("quartz/fonts/NotoSansCJKsc-Regular.otf")
 
 const LegacyOgImage: SocialImageOptions["imageStructure"] = ({
   cfg,
   title,
   description,
   fileData,
+  fonts,
 }) => {
-  const theme = cfg.theme as Theme
   const locale = cfg.locale ?? "ru-RU"
-  const english = locale.startsWith("en")
+  if (!fonts.some((font: { name: string }) => font.name === "Noto Sans CJK SC")) {
+    fonts.push({ name: "Noto Sans CJK SC", data: chineseFont, weight: 400, style: "normal" })
+    fonts.push({ name: "Noto Sans CJK SC", data: chineseFont, weight: 700, style: "normal" })
+  }
   // Preserve the existing date priority.
   const date = (
     fileData.dates?.modified ??
@@ -64,7 +45,7 @@ const LegacyOgImage: SocialImageOptions["imageStructure"] = ({
         height: "100%",
         backgroundColor: "#16171b",
         color: "#f8f7f2",
-        fontFamily: fontName(theme.typography.body),
+        fontFamily: "Noto Sans CJK SC",
       }}
     >
       <div
@@ -91,13 +72,13 @@ const LegacyOgImage: SocialImageOptions["imageStructure"] = ({
           <div
             style={{
               display: "flex",
-              fontFamily: fontName(theme.typography.header),
+              fontFamily: "Noto Sans CJK SC",
               fontSize: 24,
               fontWeight: 700,
               whiteSpace: "nowrap",
             }}
           >
-            {english ? "CATOBLEPAS" : "КАТОБЛЕПАС"}
+            {"CATOBLEPAS"}
           </div>
           <div style={{ display: "flex", color: "#526585", fontSize: 17 }}>{cfg.baseUrl}</div>
         </div>
@@ -119,7 +100,18 @@ const LegacyOgImage: SocialImageOptions["imageStructure"] = ({
             color: "#8da9ff",
           }}
         >
-          {sectionLabel(String(fileData.slug ?? ""), english)}
+          {(
+            {
+              interviews: "访谈",
+              authors: "作者",
+              published: "图书",
+              publications: "作品",
+              projects: "项目",
+              documents: "文件",
+              journal: "杂志",
+              translations: "译作",
+            } as Record<string, string>
+          )[String(fileData.slug ?? "").split("/")[0]] ?? "出版社"}
         </div>
         <div
           style={{
@@ -136,7 +128,7 @@ const LegacyOgImage: SocialImageOptions["imageStructure"] = ({
             style={{
               display: "-webkit-box",
               margin: 0,
-              fontFamily: fontName(theme.typography.header),
+              fontFamily: "Noto Sans CJK SC",
               fontSize: titleSize,
               lineHeight: 1.12,
               fontWeight: 700,
