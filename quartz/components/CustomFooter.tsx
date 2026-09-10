@@ -1,3 +1,4 @@
+import artistGalleryScript from "./scripts/artist-gallery.inline"
 import { version } from "../../package.json"
 import { QuartzComponent, QuartzComponentConstructor } from "./types"
 import { joinSegments, pathToRoot } from "../util/path"
@@ -41,7 +42,7 @@ const CustomFooter: QuartzComponentConstructor<Options> = (opts) => {
     </footer>
   )
 
-  Footer.afterDOMLoaded =
+  Footer.afterDOMLoaded = artistGalleryScript +
     ageGate +
     `
     const openIssueZoom = (link) => {
