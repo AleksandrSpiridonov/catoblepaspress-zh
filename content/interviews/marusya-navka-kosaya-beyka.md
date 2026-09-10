@@ -10,9 +10,12 @@ date: 2026-08-01
 ---
 
 > [!video] 观看访谈（俄语）
-> 视频已在 [Catoblepas 出版社 Telegram 频道](https://t.me/catoblepaspress/239)发布，收录于 Catoblepas 杂志[[№ 55 (9)|第55期]]。
+> 访谈收录于 Catoblepas 杂志[[№ 55 (9)|第55期]]。
 
-<iframe src="https://t.me/catoblepaspress/247?embed=1" width="100%" height="720" frameborder="0" scrolling="no" allowfullscreen title="玛鲁霞·纳夫卡访谈（俄语视频）">正在加载俄语视频…</iframe>
+<video controls playsinline preload="metadata" style="width: 100%; height: auto;" aria-label="玛鲁霞·纳夫卡访谈（俄语视频）">
+  <source src="https://media.catoblepaspress.ru/journal/issue-09/ru/page-05.mp4" type="video/mp4">
+  <a href="https://media.catoblepaspress.ru/journal/issue-09/ru/page-05.mp4">打开视频</a>
+</video>
 
 **对谈者：** [[asp|小亚历山大·斯皮里多诺夫]]与[[bellyinbelly|玛鲁霞·纳夫卡]]  
 **时长：** 24:02
