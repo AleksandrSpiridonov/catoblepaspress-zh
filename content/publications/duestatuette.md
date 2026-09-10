@@ -2,6 +2,7 @@
 aliases:
   - Due statuette, che sciocchezza...
 title: Due statuette, che sciocchezza...
+lang: it-IT
 description: Стихотворение Елизаветы Калужской
 tags:
   - поэзия
