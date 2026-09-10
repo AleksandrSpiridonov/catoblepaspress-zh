@@ -16,7 +16,7 @@ lang: zh-CN
 - 顾问，语言间混沌的守护者：[[ylisse|叶丽扎韦塔·卡卢日斯卡娅]]
 - 未来学大会：[[xeniaspiridonova|克谢尼娅·斯皮里多诺娃]]
 
-[[documents/editorialpolicy|出版社与杂志的编辑方针（俄文）]]
+[[documents/editorialpolicy|出版社与杂志的编辑方针]]
 
 ## 联系方式
 

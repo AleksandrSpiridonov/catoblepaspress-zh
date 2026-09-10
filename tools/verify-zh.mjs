@@ -46,6 +46,13 @@ for (const file of pages) {
   })
 }
 assert.deepEqual(problems, [])
+const anthology = fs.readFileSync("public/projects/voxcatoblepae.html", "utf8")
+assert.match(anthology, /阅读出版社与杂志的编辑方针（中文）/)
+assert.doesNotMatch(anthology, /以下编辑方针保留俄文原文/)
+for (const slug of ["about", "published/biastape", "published/new-ideas-in-art"]) {
+  const html = fs.readFileSync(`public/${slug}.html`, "utf8")
+  assert.doesNotMatch(html, /个人数据处理(?:政策|同意书)（俄文）|编辑方针（俄文）/)
+}
 const original = fs.readFileSync("public/publications/translations/index.html", "utf8")
 assert.match(original, /<html lang="ru-RU"/)
 assert.match(original, /本页保留俄文内容，未译为中文/)
