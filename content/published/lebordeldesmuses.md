@@ -10,7 +10,7 @@ year: 2026
 status: 已出版
 formats:
   - EPUB
-cover: "[[lebordeldesmuses.webp]]"
+cover: "https://zh.catoblepaspress.ru/images/lebordeldesmuses.webp"
 ---
 ![[lebordeldesmuses.webp]]
 

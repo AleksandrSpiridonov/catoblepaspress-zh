@@ -10,7 +10,7 @@ status: 可订购
 formats:
   - 纸质书
   - PDF
-cover: "[[biastape.webp]]"
+cover: "https://zh.catoblepaspress.ru/images/biastape.webp"
 ---
 ![[biastape.webp]]
 

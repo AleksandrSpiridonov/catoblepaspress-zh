@@ -17,6 +17,15 @@ for (const file of pages) {
   const html = fs.readFileSync(path.join("public", slug + ".html"), "utf8")
   assert.match(html, /<html lang="zh-CN"/)
   assert.doesNotMatch(html, /class="translation-notice"/)
+  const imageUrl = html.match(/<meta property="og:image" content="([^"]+)"/)?.[1]
+  assert.ok(imageUrl?.startsWith(base))
+  assert.doesNotMatch(imageUrl, /\[\[|static\/og-image/)
+  assert.match(html, /<meta property="og:image:type" content="image\/webp"/)
+  const card = fs.readFileSync(
+    path.join("public", decodeURIComponent(new URL(imageUrl).pathname.slice(1))),
+  )
+  assert.equal(card.toString("ascii", 0, 4), "RIFF")
+  assert.equal(card.toString("ascii", 8, 12), "WEBP")
   const canonical = new URL(slug === "index" ? "" : slug.replace(/\/index$/, "/"), base)
   const tree = fromHtml(html)
   visit(tree, "element", (node) => {
@@ -56,7 +65,10 @@ for (const slug of ["about", "published/biastape", "published/new-ideas-in-art"]
 const original = fs.readFileSync("public/publications/translations/index.html", "utf8")
 assert.match(original, /<html lang="ru-RU"/)
 assert.match(original, /本页保留俄文内容，未译为中文/)
-assert.match(original, /href="https:\/\/catoblepaspress.ru\/publications\/translations(?:\/index)?\/?"/)
+assert.match(
+  original,
+  /href="https:\/\/catoblepaspress.ru\/publications\/translations(?:\/index)?\/?"/,
+)
 assert.equal(fs.readFileSync("public/CNAME", "utf8").trim(), "zh.catoblepaspress.ru")
 const italian = fs.readFileSync("public/publications/duestatuette.html", "utf8")
 assert.match(italian, /<html lang="it-IT"/)
