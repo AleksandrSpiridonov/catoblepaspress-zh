@@ -14,46 +14,7 @@ cover: "https://zh.catoblepaspress.ru/images/biastape.webp"
 ---
 ![[biastape.webp]]
 
-<span id="заказать"></span>
-
-## 订购
-
-请选择版本并提交订单。本书为俄文原版；中文书名用于介绍。如表单无法打开，请发送邮件至 [catoblepaspress@mail.ru](mailto:catoblepaspress@mail.ru)，主题注明“косая бейка”。
-
-> [!success] 预售已结束
-> 感谢所有支持出版并参与预售的读者。俄文原公告称，本书将在公告发布当周送往印刷厂。新书发布活动计划于9月下旬举行，具体日期、地点及详情将另行公布。
->
-> 已参与预售的读者请检查邮箱，包括垃圾邮件文件夹。
-
-<span id="печатная-версия"></span>
-
-### 纸质版
-
-**490 ₽**  
-**配送费用：**  
-俄罗斯邮政：**350 ₽**  
-СДЭК：**700 ₽**
-
-以上为俄文页面列出的配送方式与价格。寄往其他国家或地区的可行性和费用，请先邮件咨询出版社。
-
-<span id="электронная-версия"></span>
-
-### 电子版
-
-**350 ₽**  
-**格式：**PDF
-
-> [!info] 如何订购
-> 填写表单后，我们会通过邮件告知付款和收书方式。表单为俄文。
-
-提交前，请阅读[[documents/privacy|个人数据处理政策]]和[[documents/personal-data-consent|个人数据处理同意书]]。
-
-<iframe title="《斜裁滚边》订购表单（俄文）" src="https://docs.google.com/forms/d/e/1FAIpQLSdEbOzuysovGTcVuT2_FwNurZ3S6g1zyGsdZLbjpg3fY5AlrA/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">正在加载……</iframe>
-
-<a class="external-cta" href="https://www.litres.ru/book/marusya-navka/kosaya-beyka-74111291/?ysclid=mtldg74zmu871061559" target="_blank" rel="noopener noreferrer">在 LitRes 阅读俄文版</a>
-
 <span id="выходные-данные"></span>
-
 ## 出版信息
 
 玛鲁霞·纳夫卡：《斜裁滚边》（косая бейка）。圣彼得堡：Catoblepas，2026。  
@@ -88,3 +49,38 @@ ISBN 978-5-600-05479-0
 
 > [!tip] 作者访谈
 > 观看或阅读[[interviews/marusya-navka-kosaya-beyka|玛鲁霞·纳夫卡访谈（中文文字／俄语视频）]]，听她谈《斜裁滚边》、诗歌、音乐与戏剧。
+
+<span id="订购"></span>
+## 订购
+
+请选择版本，并发送邮件至 [catoblepaspress@mail.ru](mailto:catoblepaspress@mail.ru)，主题注明“косая бейка”。我们会告知付款和收书方式。本书为俄文原版。
+
+<span id="печатная-версия"></span>
+### 纸质版
+**490 ₽**<br>
+**配送费用：**俄罗斯邮政 — **350 ₽**，СДЭК — **700 ₽**
+
+以上为俄文页面列出的配送方式与价格。寄往其他国家或地区的可行性和费用，请先邮件咨询出版社。
+
+<span id="электронная-версия"></span>
+### 电子版
+**350 ₽**<br>
+**格式：**PDF，俄文。
+
+订购前，请阅读 [[documents/privacy|个人数据处理政策]] 和 [[documents/personal-data-consent|个人数据处理同意书]]。
+
+<a class="external-cta" href="https://www.litres.ru/book/marusya-navka/kosaya-beyka-74111291/?ysclid=mtldg74zmu871061559" target="_blank" rel="noopener noreferrer">在 LitRes 阅读俄文版</a>
+
+<span id="购买地点"></span>
+## 购买地点
+
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2d7ad5a2f1a0acbb4cc0bee7e7304f2929aeb2d9e2ebfa2a7d6c966534698e50&amp;width=100%25&amp;height=513&amp;lang=ru_RU&amp;scroll=true"></script>
+
+到店前请先确认书籍库存：
+
+- [Wöd — Большая Морская улица, 45](https://yandex.ru/maps/?text=W%C3%B6d%2C%20Большая%20Морская%2045%2C%20Санкт-Петербург)
+- [Флёр / Fleur Vintage — Ковенский переулок, 22–24](https://yandex.ru/maps/-/CXAsEF3e)
+- [Хороший тигр — Садовая улица, 56](https://yandex.ru/maps/?text=Хороший%20тигр%2C%20Садовая%2056%2C%20Санкт-Петербург)
+- [Le Moniteur — Кадетская линия В. О., 31](https://yandex.ru/maps/?text=Le%20Moniteur%2C%20Кадетская%20линия%2031%2C%20Санкт-Петербург)
+- [Мистические бриоши Марии-Антуанетты — Средний проспект В. О., 46](https://yandex.ru/maps/?text=Мистические%20бриоши%20Марии-Антуанетты%2C%20Средний%20проспект%2046%2C%20Санкт-Петербург)
+- [Букинист ЦАП — улица Кропоткина, 19/8](https://yandex.ru/maps/-/CXAwyZP0)
