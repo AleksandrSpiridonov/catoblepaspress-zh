@@ -1,12 +1,15 @@
 ---
 aliases: Никита Аникин
 title: 尼基塔·阿尼金
+avatar: "https://media.catoblepaspress.ru/authors/anikin/portrait.webp"
 lang: zh-CN
 description: 音乐人、立体摄影师
 tags:
   - 音乐人
   - 摄影师
 ---
+<img src="https://media.catoblepaspress.ru/authors/anikin/portrait.webp" alt="尼基塔·阿尼金" loading="lazy" width="420" height="420">
+
 
 
 <span id="об-авторе"></span>
