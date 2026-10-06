@@ -18,3 +18,4 @@ aliases:
 - [[duestatuette|Due statuette, che sciocchezza…（意大利文诗歌）]]
 - [[fies|《苍蝇》（俄文译诗）]]
 - [[publications/translations/index|翻译资料（俄文）]]
+- [[asp|小亚历山大·斯皮里多诺夫]] — [[publications/reports/kosaya-beyka-presentation|《缝合》——《斜裁滚边》发布会纪实]]

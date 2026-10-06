@@ -14,6 +14,7 @@ Catoblepas 是一家来自圣彼得堡的独立出版社，出版当代诗歌和
 
 > [!abstract] 近期动态
 >
+> - **[[publications/reports/kosaya-beyka-presentation|《缝合》——《斜裁滚边》发布会纪实]]** — 2026年9月24日 F5 聚会的照片、视频与来宾感想。
 > - **[[published/biastape#订购|订购玛鲁霞·纳夫卡的《斜裁滚边》]]**——预售已结束，图书即将付印。
 > - **[[interviews/marusya-navka-kosaya-beyka|观看或阅读玛鲁霞·纳夫卡访谈（中文文字／俄语视频）]]**——谈《斜裁滚边》、诗歌、音乐与戏剧。
 > - **[[journal/index|阅读随机性杂志]]**——诗歌、散文、随笔、视觉艺术、电影与音乐。

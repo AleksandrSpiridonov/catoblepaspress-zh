@@ -51,6 +51,9 @@ ISBN 978-5-600-05479-0
 > 观看或阅读[[interviews/marusya-navka-kosaya-beyka|玛鲁霞·纳夫卡访谈（中文文字／俄语视频）]]，听她谈《斜裁滚边》、诗歌、音乐与戏剧。
 
 <span id="订购"></span>
+> [!tip] 新书发布会
+> [[publications/reports/kosaya-beyka-presentation|《缝合》——《斜裁滚边》发布会纪实]] — 2026年9月24日 F5 聚会的照片、视频与来宾感想。
+
 ## 订购
 
 请选择版本，并发送邮件至 [catoblepaspress@mail.ru](mailto:catoblepaspress@mail.ru)，主题注明“косая бейка”。我们会告知付款和收书方式。本书为俄文原版。
